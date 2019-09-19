@@ -1,0 +1,32 @@
+#blogPost {
+    padding: 0
+    }
+#blogPost .container {
+    padding: 0 7%;
+}
+#blogPost .blog-header-image{
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  #blogPost .blog-header-image .img{
+    width: 100%;
+    height: 450px;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    /* background-attachment: fixed !important; */
+  }
+  #blogPost h1{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  #blogPost p{
+    display: inline-block;
+    text-align: justify;
+    color: #929294;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-decoration: none;
+    margin-bottom: 1.8rem;
+  }

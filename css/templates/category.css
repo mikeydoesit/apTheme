@@ -1,0 +1,68 @@
+#category {
+    padding: 0
+    }
+    #category .title {
+        padding: 0 7% 30px;
+    }
+    #category .title h1{
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-family: 'Aku';
+        letter-spacing: 7px;
+        font-size: 35px;
+        
+    }
+    #category .title i{
+        vertical-align: baseline;
+        font-size: 0.6em;
+    }
+#category .container {
+    padding: 0 7%;
+    display: grid;
+    grid-auto-rows: 120px;
+    grid-auto-flow: dense;
+    grid-gap: 28px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+#category .container .categoryBlogCard {
+    grid-row: span 2;
+    grid-column: span 3;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px 0px rgba(227,220,227,1);
+    position: relative;
+    text-decoration: none;
+}
+#category .container .categoryBlogCard .categoryBlogCardInner {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.0);
+    transition: all ease 0.3s;
+}
+#category .container .categoryBlogCard .categoryBlogCardInner:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#category .container .categoryBlogCard .post-details {
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+}
+#category .container .categoryBlogCard .post-details .post-title {
+    font-size: 28px;
+    display: block;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+}
+#category .container .categoryBlogCard .post-details .post-date {
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+}

@@ -1,0 +1,22 @@
+<section id="popularCategories">
+    <?php 
+        $mypod = pods('category');
+        $mypod->find('name DESC');
+    ?>
+    <?php while ( $mypod->fetch() ) : ?>
+
+        <?php
+        //set the variables
+        $name = $mypod->field('name');
+        $category_class = $mypod->field('category_class');
+        ?>
+
+        <div class="categoryCardWrapper">
+            <div class="categoryCard <?php echo $category_class ?>"></div>
+            <div class="post-categories <?php echo $category_class ?>">
+                <a href=""><?php echo $name ?></a>
+            </div>
+        </div>
+
+    <?php endwhile; ?>
+</section>
