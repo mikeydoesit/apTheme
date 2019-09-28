@@ -3,6 +3,9 @@
 @import "templates/category.css";
 @import "templates/header.css";
 @import "templates/recentBlogs.css";
+@import "templates/editorsPicks.css";
+@import "templates/popCategories.css";
+@import "templates/footer.css";
 
 @font-face {
     font-family: 'Aku';
@@ -53,9 +56,6 @@ hr {
     height: 0;
     overflow: visible;
 }
-
-
-
 .widget-banner {
     max-width: 1541px;
     margin: 0 auto 3.5rem;
@@ -74,17 +74,6 @@ hr {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 42px;
-}
-
-#editorPicks {
-    padding: 0 7%;
-    margin: 0 auto;
-    display: grid;
-    grid-auto-rows: 120px;
-    grid-auto-flow: dense;
-    grid-gap: 28px;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    max-width: 1541px;
 }
 .sectionHeader {
     padding: 0 7%;
@@ -108,6 +97,10 @@ hr {
     vertical-align: baseline;
     font-size: 0.6em;
 }
+hr:last-of-type {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 @media screen and (max-width: 380px) {
     .sectionHeader {
         display: flex !important;
@@ -123,176 +116,4 @@ hr {
         margin-bottom: 11px !important;
         font-size: 0.5em;
     }
-}
-@media screen and (min-width: 861px) and (max-width: 1158px) {
-    #popularCategories {
-        grid-gap: 14px !important;
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)) !important;
-    }
-}
-@media screen and (max-width: 860px) {
-    #popularCategories .categoryCardWrapper {
-        grid-row: span 2 !important;
-    }
-}
-@media screen and (max-width: 999px) {
-    #editorPicks {
-        grid-template-columns: repeat(auto-fit, minmax(195px, 1fr)) !important;
-    }
-    #editorPicks .blogCard {
-        grid-row: span 4 !important;
-    }
-}
-#editorPicks .blogCard {
-    grid-row: span 5;
-    grid-column: span 2;
-    text-decoration: none;
-}
-#editorPicks .blogCard .imgWrapper {
-    height: 45%;
-    margin-bottom: 30px;
-    border-radius: 7px;
-    box-shadow: 0px 0px 10px 0px rgba(227,220,227,1); 
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-#editorPicks .blogCard .post-title {
-    font-size: 24px;
-    display: block;
-    color: #000000;
-    margin-top: 0;
-    margin-bottom: 15px;
-    word-wrap: break-word;
-}
-#editorPicks .blogCard .post-author, #editorPicks .blogCard .post-date {
-    display: inline-block;
-    color: #666666;
-    font-size: 14px;
-}
-#editorPicks .blogCard .post-author .post-avatar {
-    display: inline-block;
-    margin-right: 10px;
-    vertical-align: middle;
-    height: 28px !important;
-}
-#editorPicks .blogCard .post-author .post-avatar img{
-    height: 28px !important;
-    width: 28px !important;
-}
-#editorPicks .blogCard .post-author::after {
-    content: "-";
-    margin-left: 10px;
-    margin-right: 5px;
-}
-#editorPicks .blogCard .post-excerpt {
-    margin: 20px 0;
-    font-size: 16px;
-    color: #666666;
-    text-align: justify;
-    line-height: 1.75;
-}
-#editorPicks .blogCard .imgWrapper .post-categories {
-    padding: 30px;
-    padding-bottom: 0;
-    margin-bottom: 5px;
-    font-size: 10px;
-    letter-spacing: 2px;
-}
-#editorPicks .blogCard .imgWrapper .post-categories span{
-    padding: 3px 7px;
-    text-decoration: none;
-    color: azure;
-    font-weight: 600;
-    border-radius: 5px;
-    text-transform: uppercase;
-}
-
-#popularCategories {
-    padding: 0 7%;
-    display: grid;
-    grid-auto-rows: 120px;
-    grid-auto-flow: dense;
-    grid-gap: 28px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    margin: 0 auto 3.5rem;
-    max-width: 1541px;
-}
-#popularCategories .categoryCardWrapper {
-    grid-row: span 3;
-    grid-column: span 2;
-    border-radius: 7px;
-    box-shadow: 0px 0px 10px 0px rgba(227,220,227,1);
-    overflow: hidden;
-    position: relative;
-}
-#popularCategories .categoryCardWrapper .categoryCard {
-    border-radius: 7px;
-    height: 100%;
-    width: 100%;
-    transition: all ease-in-out 0.5s;
-}
-#popularCategories .categoryCardWrapper:hover .categoryCard {
-    transform: scale(1.1);
-}
-#popularCategories .categoryCardWrapper .categoryCard.food {background: url("../img/edgar-castrejon-1CsaVdwfIew-unsplash.png") center/cover no-repeat;}
-#popularCategories .categoryCardWrapper .categoryCard.skinhair {background: url("../img/eloise-ambursley-59Td06omPVc-unsplash.png") center/cover no-repeat;}
-#popularCategories .categoryCardWrapper .categoryCard.businessfinance {background: url("../img/linkedin-sales-navigator-EI50ZDA-l8Y-unsplash.png") center/cover no-repeat;}
-#popularCategories .categoryCardWrapper .categoryCard.culture {background: url("../img/rory-carson-6RxDN3vM45g-unsplash.png") center/cover no-repeat;}
-#popularCategories .categoryCardWrapper .categoryCard.inspiration {background: url("../img/matthew-kerslake-BpH--upRlCs-unsplash.png") center/cover no-repeat;}
-#popularCategories .categoryCardWrapper .post-categories {
-    position: absolute;
-    font-size: 12px;
-    letter-spacing: 2px;
-    bottom: 0;
-    width: 100%;
-    display: block;
-    padding: 10px 14px;
-    border-radius: 0px 0px 7px 7px;
-}
-#popularCategories .categoryCardWrapper .post-categories span {
-    text-decoration: none;
-    color: azure;
-    font-weight: 600;
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-}
-hr:last-of-type {
-    margin-top:3.5rem;
-    margin-bottom: 2rem;
-}
-.footer {
-    padding: 0 7% 30px;
-}
-.footer .socMedLinks {
-    margin-bottom: 15px;
-}
-.footer .socMedLinks a {
-    line-height: 1.75;
-}
-.footer #footerMenu {
-    margin-bottom: 15px;
-}
-.footer #footerMenu a {
-    text-decoration: none;
-    margin: 0 14px;
-    font-size: 15px;
-    color: #000000;
-    font-weight: 400;
-    cursor: pointer;
-}
-.footer #footerMenu a:first-of-type,
-.footer .socMedLinks a:first-of-type {
-    margin-left: 0;
-}
-.footer #footerCopyright {
-    color: rgba(174, 174, 174, 1);
-}
-.footer #footerCopyright p {
-    font-weight: 600;
-    font-size: 15px;
-}
-.footer #footerCopyright p span{
-    color: #000000;
 }

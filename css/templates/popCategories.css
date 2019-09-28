@@ -1,0 +1,61 @@
+#popularCategories {
+    padding: 0 7%;
+    display: grid;
+    grid-auto-rows: 120px;
+    grid-auto-flow: dense;
+    grid-gap: 28px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin: 0 auto 3.5rem;
+    max-width: 1541px;
+}
+#popularCategories .categoryCardWrapper {
+    grid-row: span 3;
+    grid-column: span 2;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px 0px rgba(227,220,227,1);
+    overflow: hidden;
+    position: relative;
+}
+#popularCategories .categoryCardWrapper .categoryCard {
+    border-radius: 7px;
+    height: 100%;
+    width: 100%;
+    transition: all ease-in-out 0.5s;
+}
+#popularCategories .categoryCardWrapper:hover .categoryCard {
+    transform: scale(1.1);
+}
+#popularCategories .categoryCardWrapper .categoryCard.food {background: url("/wp-content/themes/apBlog/img/edgar-castrejon-1CsaVdwfIew-unsplash.png") center/cover no-repeat;}
+#popularCategories .categoryCardWrapper .categoryCard.skinhair {background: url("/wp-content/themes/apBlog/img/eloise-ambursley-59Td06omPVc-unsplash.png") center/cover no-repeat;}
+#popularCategories .categoryCardWrapper .categoryCard.businessfinance {background: url("/wp-content/themes/apBlog/img/linkedin-sales-navigator-EI50ZDA-l8Y-unsplash.png") center/cover no-repeat;}
+#popularCategories .categoryCardWrapper .categoryCard.culture {background: url("/wp-content/themes/apBlog/img/rory-carson-6RxDN3vM45g-unsplash.png") center/cover no-repeat;}
+#popularCategories .categoryCardWrapper .categoryCard.inspiration {background: url("/wp-content/themes/apBlog/img/matthew-kerslake-BpH--upRlCs-unsplash.png") center/cover no-repeat;}
+#popularCategories .categoryCardWrapper .post-categories {
+    position: absolute;
+    font-size: 12px;
+    letter-spacing: 2px;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    padding: 10px 14px;
+    border-radius: 0px 0px 7px 7px;
+}
+#popularCategories .categoryCardWrapper .post-categories span {
+    text-decoration: none;
+    color: azure;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+@media screen and (min-width: 861px) and (max-width: 1158px) {
+    #popularCategories {
+        grid-gap: 14px !important;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)) !important;
+    }
+}
+@media screen and (max-width: 860px) {
+    #popularCategories .categoryCardWrapper {
+        grid-row: span 2 !important;
+    }
+}

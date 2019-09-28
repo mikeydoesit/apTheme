@@ -1,0 +1,46 @@
+.footer {
+    padding: 0 7% 30px;
+}
+.footer .socMedLinks {
+    margin-bottom: 15px;
+}
+.footer .socMedLinks a {
+    line-height: 1.75;
+}
+.footer #footerMenu {
+    margin-bottom: 15px;
+}
+.footer #footerMenu a {
+    text-decoration: none;
+    margin: 0 14px;
+    font-size: 15px;
+    color: #000000;
+    font-weight: 400;
+    cursor: pointer;
+}
+.footer #footerMenu a:first-of-type,
+.footer .socMedLinks a:first-of-type {
+    margin-left: 0;
+}
+.footer #footerCopyright {
+    color: rgba(174, 174, 174, 1);
+}
+.footer #footerCopyright p {
+    font-weight: 600;
+    font-size: 15px;
+}
+.footer #footerCopyright p span{
+    color: #000000;
+}
+@media screen and (max-width: 425px) {
+    .footer #footerMenu {
+        display: flex;
+    }
+    .footer #footerMenu a{
+        margin: 0 7px;
+        font-size: 13px;
+    }
+    .footer #footerCopyright p {
+        font-size: 13px;
+    }
+}
