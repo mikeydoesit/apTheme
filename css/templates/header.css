@@ -1,0 +1,134 @@
+header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    height: 96px;
+}
+header .logo {
+    width: 70px;
+}
+header #navLinks {
+    flex-grow: 1;
+}
+header #navLinks nav {
+    margin: 0 auto;
+    text-align: center;
+}
+header nav a {
+    padding: 2px 18px;
+    text-decoration: none;
+    color: rgba(174, 174, 174, 1);
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Aku';
+    letter-spacing: 2px;
+    transition: all ease-in-out 0.3s;
+}
+header nav .home:hover,
+header nav .home.active {color: #000000;}
+header nav .fashion:hover,
+header nav .fashion.active {color: #FFFF00;}
+header nav .skinhair:hover,
+header nav .skinhair.active {color: deepskyblue;}
+header nav .food:hover,
+header nav .food.active {color: #81d742;}
+header nav .tech:hover,
+header nav .tech.active {color: darkorchid;}
+header nav .inspiration:hover,
+header nav .inspiration.active {color: crimson;}
+header nav .culture:hover,
+header nav .culture.active {color: darkgoldenrod;}
+header nav .businessfinance:hover,
+header nav .businessfinance.active {color: orangered;}
+
+header .socMedLinks a,
+.footer .socMedLinks a {
+    margin: 0 7px;
+}
+header .socMedLinks a i,
+.footer .socMedLinks a i {
+    transition: all ease-in-out 0.3s;
+}
+header .socMedLinks a:nth-child(1) i,
+.footer .socMedLinks a:nth-child(1) i {color: #3b5998;}
+header .socMedLinks a:nth-child(2) i,
+.footer .socMedLinks a:nth-child(2) i {color: #e52d27;}
+header .socMedLinks a:nth-child(3) i,
+.footer .socMedLinks a:nth-child(3) i {color: #55acee;}
+header .socMedLinks a:nth-child(4) i,
+.footer .socMedLinks a:nth-child(4) i {color: #0077b5;}
+header .socMedLinks a i:hover,
+.footer .socMedLinks a i:hover {
+    color: rgba(174, 174, 174, 1);
+}
+
+#mobileMenu {
+    display: none;
+}
+#headerLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#headerLeft #mobileMenu .icon {
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    border: rgba(174, 174, 174, 1) solid 1px;
+    border-radius: 7px;
+    margin-left: 7px;
+    padding: 5px 7px;
+}
+#headerLeft #mobileMenu .icon:hover {
+    color: rgba(174, 174, 174, 1);
+}
+#mobileMenuNavLinks {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 96px;
+    padding: 0 7%;
+    z-index: 1;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px 0px rgba(227,220,227,1);
+}
+#mobileMenuNavLinks a:first-child{
+    padding-top: 28px;
+}
+#mobileMenuNavLinks a:last-child{
+    padding-bottom: 28px;
+}
+#mobileMenuNavLinks a {
+    padding: 14px 0;
+    margin: 0 auto;
+    text-decoration: none;
+    color: rgba(174, 174, 174, 1);
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Aku';
+    letter-spacing: 2px;
+    transition: all ease-in-out 0.3s;
+}
+
+@media screen and (max-width: 1250px) {
+    header nav a {
+        padding: 2px 11px;
+    }
+}
+@media screen and (max-width: 1230px) {
+    #recentBlogs {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) !important;
+    }
+}
+@media screen and (max-width: 1112px) {
+    header #navLinks {
+        display: none;
+    }
+    #mobileMenu {
+        display: inline-block;
+    }
+}

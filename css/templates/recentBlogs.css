@@ -1,0 +1,184 @@
+#recentBlogs {
+    padding: 0 7%;
+    display: grid;
+    grid-auto-rows: 120px;
+    grid-auto-flow: dense;
+    grid-gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    margin: 0 auto 3.5rem;    
+    max-width: 1541px;
+}
+#recentBlogs .recentBlogCard:nth-child(1) {
+    grid-row: span 2;
+    grid-column: span 4;
+}
+#recentBlogs .recentBlogCard:nth-child(2) {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+#recentBlogs .recentBlogCard:nth-child(3) {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+#recentBlogs .recentBlogCard:nth-child(4) {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+#recentBlogs .recentBlogCard:nth-child(5) {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+#recentBlogs .recentBlogCard:nth-child(6) {
+    grid-row: span 2;
+    grid-column: span 4;
+}
+#recentBlogs .recentBlogCard {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px 0px rgba(227,220,227,1);
+    position: relative;
+    text-decoration: none;
+}
+#recentBlogs .recentBlogCard .recentBlogCardInner {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.0);
+    transition: all ease 0.3s;
+}
+#recentBlogs .recentBlogCard .recentBlogCardInner:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#recentBlogs .recentBlogCard .post-categories {
+    padding: 30px;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+#recentBlogs .recentBlogCard .post-categories span {
+    padding: 3px 7px;
+    text-decoration: none;
+    color: azure;
+    font-weight: 600;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+#recentBlogs .recentBlogCard .post-categories .food, 
+#editorPicks .blogCard .imgWrapper .post-categories .food,
+#popularCategories .categoryCardWrapper .post-categories.food {
+    background-color: #81d742;
+}
+#recentBlogs .recentBlogCard .post-categories .culture, 
+#editorPicks .blogCard .imgWrapper .post-categories .culture,
+#popularCategories .categoryCardWrapper .post-categories.culture {
+    background-color: darkgoldenrod;
+}
+#recentBlogs .recentBlogCard .post-categories .tech, 
+#editorPicks .blogCard .imgWrapper .post-categories .tech,
+#popularCategories .categoryCardWrapper .post-categories.tech {
+    background-color: darkorchid;
+}
+#recentBlogs .recentBlogCard .post-categories .skinhair, 
+#editorPicks .blogCard .imgWrapper .post-categories .skinhair,
+#popularCategories .categoryCardWrapper .post-categories.skinhair {
+    background-color: deepskyblue;
+}
+#recentBlogs .recentBlogCard .post-categories .inspiration, 
+#editorPicks .blogCard .imgWrapper .post-categories .inspiration,
+#popularCategories .categoryCardWrapper .post-categories.inspiration {
+    background-color: crimson;
+}
+#recentBlogs .recentBlogCard .post-categories .businessfinance, 
+#editorPicks .blogCard .imgWrapper .post-categories .businessfinance,
+#popularCategories .categoryCardWrapper .post-categories.businessfinance {
+    background-color: orangered;
+}
+#recentBlogs .recentBlogCard .post-details {
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+}
+#recentBlogs .recentBlogCard .post-details .post-title {
+    font-size: 28px;
+    display: block;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+}
+#recentBlogs .recentBlogCard .post-details .post-date {
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1044px) {
+    #recentBlogs {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)) !important;
+    }
+    #recentBlogs .recentBlogCard:nth-child(1) {
+        grid-row: span 2 !important;
+        grid-column: span 8 !important;
+    }
+    #recentBlogs .recentBlogCard:nth-child(2) {
+        grid-row: span 2 !important;
+        grid-column: span 4 !important;
+    }
+    #recentBlogs .recentBlogCard:nth-child(3) {
+        grid-row: span 2 !important;
+        grid-column: span 4 !important;
+    }
+    #recentBlogs .recentBlogCard:nth-child(4) {
+        grid-row: span 2 !important;
+        grid-column: span 8 !important;
+    }
+    #recentBlogs .recentBlogCard:nth-child(5) {
+        grid-row: span 2 !important;
+        grid-column: span 4 !important;
+    }
+    #recentBlogs .recentBlogCard:nth-child(6) {
+        grid-row: span 2 !important;
+        grid-column: span 4 !important;
+    }
+}
+@media screen and (max-width: 858px) {
+    #recentBlogs {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)) !important;
+    }
+}
+@media screen and (max-width: 672px) {
+    #recentBlogs {
+        grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)) !important;
+    }
+}
+@media screen and (max-width: 490px) {
+    #recentBlogs {
+        grid-template-columns: repeat(auto-fit, minmax(25px, 1fr)) !important;
+    }
+    #recentBlogs .recentBlogCard .post-categories {
+        padding: 30px 20px 0px !important;
+    }
+    #recentBlogs .recentBlogCard .post-details {
+        padding: 30px 20px !important;
+    }
+    #recentBlogs .recentBlogCard .post-details .post-title {
+        font-size: 21px !important;
+    }
+}
+@media screen and (max-width: 424px) {
+    #recentBlogs .recentBlogCard:nth-child(2),
+    #recentBlogs .recentBlogCard:nth-child(3),
+    #recentBlogs .recentBlogCard:nth-child(5),
+    #recentBlogs .recentBlogCard:nth-child(6) {
+        grid-column: span 8 !important;
+    }
+}
+@media screen and (max-width: 346px) {
+    #recentBlogs {
+        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr)) !important;
+    }
+}
