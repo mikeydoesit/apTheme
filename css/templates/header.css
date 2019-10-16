@@ -52,7 +52,12 @@ header .socMedLinks a i,
     transition: all ease-in-out 0.3s;
 }
 header .socMedLinks a:nth-child(1) i,
-.footer .socMedLinks a:nth-child(1) i {color: #3b5998;}
+.footer .socMedLinks a:nth-child(1) i {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 header .socMedLinks a:nth-child(2) i,
 .footer .socMedLinks a:nth-child(2) i {color: #e52d27;}
 header .socMedLinks a:nth-child(3) i,
@@ -62,6 +67,14 @@ header .socMedLinks a:nth-child(4) i,
 header .socMedLinks a i:hover,
 .footer .socMedLinks a i:hover {
     color: rgba(174, 174, 174, 1);
+}
+header .socMedLinks a:nth-child(1) i:hover,
+.footer .socMedLinks a:nth-child(1) i:hover {
+    background: linear-gradient(#aeaeae, #aeaeae);
+    background: -webkit-linear-gradient(#aeaeae, #aeaeae);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #mobileMenu {

@@ -1,34 +1,40 @@
 #category {
-    padding: 0
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1541px;
     }
     #category .title {
         padding: 0 7% 30px;
     }
     #category .title h1{
-        display: inline-block;
+        display: inline;
         text-transform: uppercase;
-        font-size: 2rem;
         font-family: 'Aku';
         letter-spacing: 7px;
         font-size: 35px;
-        
     }
     #category .title i{
         vertical-align: baseline;
         font-size: 0.6em;
     }
+
+#category .title .fashion {color: #FFFF00;}
+#category .title .skinhair {color: deepskyblue;}
+#category .title .food {color: #81d742;}
+#category .title .tech {color: darkorchid;}
+#category .title .inspiration {color: crimson;}
+#category .title .culture {color: darkgoldenrod;}
+#category .title .businessfinance {color: orangered;}
 #category .container {
     padding: 0 7%;
     display: grid;
     grid-auto-rows: 120px;
-    grid-auto-flow: dense;
     grid-gap: 28px;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 #category .container .categoryBlogCard {
     grid-row: span 2;
-    grid-column: span 3;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -65,4 +71,10 @@
     display: inline-block;
     font-size: 14px;
     font-weight: 600;
+}
+
+@media screen and (max-width: 790px) {
+    #category .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

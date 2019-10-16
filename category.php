@@ -1,7 +1,24 @@
 <?php get_header(); ?>
 
 <section id="category">
-        <div class="title"><h1><?php single_cat_title(); ?></h1><i class="fas fa-circle fa-xs"></i></div>
+        <div class="title"><h1><?php single_cat_title(); ?></h1>
+        <?php if (is_category('Fashion')) : ?>
+        <i class="fas fa-circle fa-xs fashion"></i>
+        <?php elseif (is_category('Tech')) : ?>
+        <i class="fas fa-circle fa-xs tech"></i>
+        <?php elseif (is_category('businessfinance')) : ?>
+        <i class="fas fa-circle fa-xs businessfinance"></i>
+        <?php elseif (is_category('Culture')) : ?>
+        <i class="fas fa-circle fa-xs culture"></i>
+        <?php elseif (is_category('Food')) : ?>
+        <i class="fas fa-circle fa-xs food"></i>
+        <?php elseif (is_category('Inspiration')) : ?>
+        <i class="fas fa-circle fa-xs inspiration"></i>
+        <?php elseif (is_category('skinhair')) : ?>
+        <i class="fas fa-circle fa-xs skinhair"></i>
+        <?php else : ?>
+        <i class="fas fa-circle fa-xs"></i>
+<?php endif; ?></div>
     <div class="container">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <?php if ( has_post_thumbnail() ) {

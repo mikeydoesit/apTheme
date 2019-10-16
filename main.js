@@ -1,11 +1,27 @@
 let loader = document.querySelector('.loader');
 let main = document.querySelector('main');
+let headerDivider = document.querySelector('#header-divider');
+let footerDivider = document.querySelector('#footer-divider');
 
 let nav = document.querySelector('nav');
 let navLinks = nav.getElementsByTagName('a');
-let pageURL = window.location.pathname;
-let pathNameArray = pageURL.split('/');
-console.log(pathNameArray);
+let contactSection = document.querySelector('#contact-wrapper');
+let pagePATH = window.location.pathname;
+let pageURL = window.location.href;
+let pathNameArray = pagePATH.split('/');
+
+console.log(pageURL);
+console.log(window.location.href);
+
+
+if (pagePATH.includes('/about')) {
+  headerDivider.style.marginBottom = 0;
+  footerDivider.style.marginTop = 0;
+  footerDivider.style.opacity = 0;
+}
+if (pageURL.includes('contact-wrapper')) {
+  contactSection.scrollIntoView({behavior: "smooth", block: "center"});
+}
 
 function toggleMobileMenu() {
     let mobileMenu = document.getElementById("mobileMenuNavLinks");
@@ -15,8 +31,6 @@ function toggleMobileMenu() {
       mobileMenu.style.display = "flex";
     }
   }
-
-
 
 function load() {
     
@@ -34,6 +48,10 @@ function load() {
 
         main.style.display = 'block';
         setTimeout(() => (main.style.opacity = 1), 250);
+
+        if (pageURL.includes('contact-wrapper')) {
+            contactSection.scrollIntoView({behavior: "smooth", block: "start"});
+        }
     }, 3000);
 }
 
