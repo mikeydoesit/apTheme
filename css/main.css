@@ -6,6 +6,7 @@
 @import "templates/editorsPicks.css";
 @import "templates/popCategories.css";
 @import "templates/about.css";
+@import "templates/privacy.css";
 @import "templates/footer.css";
 
 @font-face {
@@ -13,7 +14,6 @@
     src: url('fonts/Aku&Kamu.otf')
          format('opentype');
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +23,6 @@
 html {
     width: auto;
 }
-
 .loader  {
     height: 100vh;
     display: flex;
@@ -36,13 +35,11 @@ html {
     transform: translate3d(0);
     animation: bounce 0.7s infinite alternate;
 }
-
 @keyframes bounce {
     to {
         transform: translate3d(0, -16px, 0);
     }
 }
-
 main {
     transition: opacity 1s ease-in;
     opacity: 0;

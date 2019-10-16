@@ -14,7 +14,7 @@ console.log(pageURL);
 console.log(window.location.href);
 
 
-if (pagePATH.includes('/about')) {
+if (pagePATH.includes('/about') || pagePATH.includes('/privacy')) {
   headerDivider.style.marginBottom = 0;
   footerDivider.style.marginTop = 0;
   footerDivider.style.opacity = 0;

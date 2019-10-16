@@ -1,0 +1,70 @@
+#privacy {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1541px;
+    }
+#privacy .container {
+    padding: 0 7%;
+}
+#privacy .head {
+    padding: 0 5%;
+    height: 75vh;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#privacy .head .title-wrapper {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#privacy .head .title-wrapper .title {
+    font-family: 'Aku';
+    letter-spacing: 7px;
+    font-weight: bold;
+    line-height: 1.25;
+    -webkit-font-smoothing: antialiased;
+    font-size: 4.2rem;
+    text-align: center;
+}
+#privacy .container .content h3 {
+    display: inline-block;
+    font-family: 'Aku';
+    letter-spacing: 7px;
+    text-align: left;
+    font-size: 21px;
+    margin-bottom: 16px;
+    font-weight: bold;
+    line-height: 1.25;
+    color: #000000;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+}
+#privacy .container .content {
+    padding-top: 45px;
+}
+#privacy .container .content p {
+    display: inline-block;
+    text-align: justify;
+    color: #929294;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-decoration: none;
+    margin-bottom: 1.8rem;
+}
+#privacy .container .content ul {
+    display: inline-block;
+    color: #929294;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.8rem;
+    padding-left: 5%;
+    padding-right: 5%;
+}
