@@ -1,3 +1,8 @@
+#about {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1541px;
+}
 #about .head {
     padding: 0 5%;
     height: 75vh;
@@ -11,11 +16,12 @@
     align-items: center;
 }
 #about .head .title-wrapper {
-    width: 600px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 5%;
 }
 #about .head .title-wrapper .title {
     font-family: 'Aku';
@@ -38,7 +44,6 @@
     padding: 90px 5% 45px;
 }
 #about .intro-wrapper .intro {
-    width: 700px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -66,7 +71,7 @@
     margin-bottom: 30px;
 }
 #about .team-wrapper {
-    padding: 45px 5% 90px;
+    padding: 45px 5%;
 }
 #about .team-wrapper .v-divider {
     margin: 0 auto 45px;
@@ -141,6 +146,19 @@
     transition: all .5s ease-in-out;
     opacity: 0;
     color: #fff;
+    position: relative;
+}
+#about .team-wrapper .team .profile .profile-pic .profile-info-wrapper .profile-info .socMed {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#about .team-wrapper .team .profile .profile-pic .profile-info-wrapper .profile-info .socMed a{
+    color: #fff;
+    padding: 0 5px;
+}
+#about .team-wrapper .team .profile .profile-pic .profile-info-wrapper .profile-info .socMed a i {
+    font-size: 14px;
 }
 #about .team-wrapper .team .profile .profile-pic .profile-info-wrapper .profile-info .name h3 {
     font-size: 1.1rem;
@@ -174,7 +192,6 @@
     grid-template-rows: 75px 75px 75px 75px 75px;
 }
 .workplace .workplace-mondrian-container .workplace-mondrian .tile {
-    background: #000000;
     overflow: hidden;
 }
 .workplace .workplace-mondrian-container .workplace-mondrian .tile.image1,
@@ -340,4 +357,124 @@
 }
 #about #contact-wrapper .contact-details .email i {
     padding-right: 14px;
+}
+
+@media screen and (max-width: 1038px) {
+    #about .team-wrapper .team .profile .profile-pic {
+        height: 250px;
+    }
+    #about .team-wrapper .team {
+        grid-gap: 28px;
+    }
+}
+@media screen and (max-width: 940px) {
+    .workplace .workplace-mondrian-container .workplace-mondrian {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 75px 75px 75px 75px 75px 75px 75px 75px 75px;
+    }
+    .workplace .workplace-mondrian-container .workplace-mondrian .tile.image1,
+.workplace .workplace-mondrian-container .workplace-mondrian .tile.image7 {
+    grid-row: 1/4;
+    grid-column: 1/8;
+}
+.workplace .workplace-mondrian-container .workplace-mondrian .tile.image2,
+.workplace .workplace-mondrian-container .workplace-mondrian .tile.image8 {
+    grid-row: 1/4;
+    grid-column: 8/15;
+}
+.workplace .workplace-mondrian-container .workplace-mondrian .tile.image3,
+.workplace .workplace-mondrian-container .workplace-mondrian .tile.image9 {
+    grid-row: 4/7;
+    grid-column: 1/8;
+}
+.workplace .workplace-mondrian-container .workplace-mondrian .tile.image4,
+.workplace .workplace-mondrian-container .workplace-mondrian .tile.image10 {
+    grid-row: 4/7;
+    grid-column: 8/15;
+}
+.workplace .workplace-mondrian-container .workplace-mondrian .tile.image5,
+.workplace .workplace-mondrian-container .workplace-mondrian .tile.image11 {
+    grid-row: 7/10;
+    grid-column: 1/8;
+}
+.workplace .workplace-mondrian-container .workplace-mondrian .tile.image6,
+.workplace .workplace-mondrian-container .workplace-mondrian .tile.image12 {
+    grid-row: 7/10;
+    grid-column: 8/15;
+}
+}
+@media screen and (max-width: 820px) {
+    #about .team-wrapper .team .profile .profile-pic {
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    #about .team-wrapper .team .profile {
+        max-width: 300px;
+    }
+    #about .team-wrapper .team {
+        grid-template-columns: repeat(1, auto);
+        grid-gap: 21px;
+        max-width: 300px;
+    }
+    #about .team-wrapper .team .profile:hover {
+        background: #000000;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+}
+
+@media screen and (max-width: 585px) {
+    #about .head .title-wrapper .subtitle {
+        padding: 0 50px;
+        font-size: 0.9rem;
+    }
+    .workplace .workplace-mondrian-container .workplace-mondrian {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 75px 75px 75px 75px 75px 75px 75px 75px 75px;
+    }
+    .workplace .workplace-mondrian-container .workplace-mondrian .tile.image1,
+    .workplace .workplace-mondrian-container .workplace-mondrian .tile.image4,
+    .workplace .workplace-mondrian-container .workplace-mondrian .tile.image5,
+    .workplace .workplace-mondrian-container .workplace-mondrian .tile.image10,
+    .workplace .workplace-mondrian-container .workplace-mondrian .tile.image11,
+    .workplace .workplace-mondrian-container .workplace-mondrian .tile.image12 {
+        display: none;
+}
+.workplace .workplace-mondrian-container .workplace-mondrian .tile.image2,
+.workplace .workplace-mondrian-container .workplace-mondrian .tile.image8 {
+    grid-row: 1/4;
+    grid-column: 1/15;
+}
+.workplace .workplace-mondrian-container .workplace-mondrian .tile.image3,
+.workplace .workplace-mondrian-container .workplace-mondrian .tile.image9 {
+    grid-row: 4/7;
+    grid-column: 1/15;
+}
+
+.workplace .workplace-mondrian-container .workplace-mondrian .tile.image7 {
+    grid-row: 7/10;
+    grid-column: 1/15;
+}
+.workplace .workplace-mondrian-container .workplace-mondrian .tile.image6 {
+    grid-row: 7/10;
+    grid-column: 1/15;
+}
+
+}
+@media screen and (max-width: 500px) {
+    #about .head .title-wrapper .title {
+        font-size: 3.5rem;
+    }
+}
+@media screen and (max-width: 430px) {
+    #about .head .title-wrapper .title {
+        font-size: 2.1rem;
+    }
+    #about .head .title-wrapper .subtitle {
+        padding: 14px 35px 0;
+        font-size: 0.7rem;
+    }
 }

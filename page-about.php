@@ -29,6 +29,10 @@
                                 <div class="title">
                                     <p>Founder & Writer</p>
                                 </div>
+                                <div class="socMed">
+                                <a href="https://www.instagram.com/alexiaamissah/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/alexia-a-59023715a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -42,6 +46,10 @@
                                 </div>
                                 <div class="title">
                                     <p>Editor & Writer</p>
+                                </div>
+                                <div class="socMed">
+                                <a href="https://twitter.com/100percentObeng" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/michaelobeng/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                 </div>
                             </div>
                         </div>

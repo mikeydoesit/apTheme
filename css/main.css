@@ -20,9 +20,6 @@
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
 }
-html {
-    width: auto;
-}
 .loader  {
     height: 100vh;
     display: flex;
@@ -110,7 +107,7 @@ hr:last-of-type {
         font-size: 25px !important;
         margin-bottom: 25px !important;
     }
-    .sectionHeader i{
+    .sectionHeader i {
         margin-bottom: 11px !important;
         font-size: 0.5em;
     }
