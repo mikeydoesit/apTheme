@@ -47,12 +47,12 @@ function load() {
         loader.style.display = 'none';
 
         main.style.display = 'block';
-        setTimeout(() => (main.style.opacity = 1), 250);
+        setTimeout(() => (main.style.opacity = 1), 500);
 
         if (pageURL.includes('contact-wrapper')) {
             contactSection.scrollIntoView({behavior: "smooth", block: "start"});
         }
-    }, 3000);
+    }, 2000);
 }
 
 load();

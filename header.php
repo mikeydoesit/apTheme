@@ -12,7 +12,7 @@
 </head>
 <body <?php body_class() ?>>
 <div class="loader">
-    <img src="<?php echo get_bloginfo('template_directory'); ?>/img/aplogo.png" alt="">
+    <!-- <img src="<?php echo get_bloginfo('template_directory'); ?>/img/aplogo.png" alt=""> -->
 </div>
     <main>
     <div id="mobileMenuNavLinks">
@@ -52,9 +52,9 @@
             
             
             <div class="socMedLinks">
-                <a href=""><i class="fab fa-instagram"></i></a>
-                <a href=""><i class="fab fa-youtube"></i></a>
-                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/the_afropick/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCuCVy9fg3UhtyRSjfMyMLVQ/" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com/afro_post" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href=""><i class="fab fa-linkedin-in"></i></a>
             </div>
         </header>

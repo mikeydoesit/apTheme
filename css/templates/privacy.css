@@ -8,7 +8,7 @@
 }
 #privacy .head {
     padding: 0 5%;
-    height: 75vh;
+    height: 50vh;
     background: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -19,7 +19,7 @@
     align-items: center;
 }
 #privacy .head .title-wrapper {
-    width: 600px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +35,7 @@
     text-align: center;
 }
 #privacy .container .content h3 {
-    display: inline-block;
+    display: block;
     font-family: 'Aku';
     letter-spacing: 7px;
     text-align: left;
@@ -67,4 +67,14 @@
     margin-bottom: 1.8rem;
     padding-left: 5%;
     padding-right: 5%;
+}
+@media screen and (max-width: 500px) {
+    #privacy .head .title-wrapper .title {
+        font-size: 3.5rem;
+    }
+}
+@media screen and (max-width: 430px) {
+    #privacy .head .title-wrapper .title {
+        font-size: 2.1rem;
+    }
 }

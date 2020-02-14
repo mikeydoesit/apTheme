@@ -4,7 +4,7 @@
         <section class="head">
             <div class="title-wrapper">
                 <h1 class="title">who we are.</h1>
-                <p class="subtitle">An organisation of creators sharing ideas, traditions whilst encouraging entrepreneurship and critical thinking.
+                <p class="subtitle">An organisation of creators sharing ideas and traditions whilst encouraging entrepreneurship and critical thinking.
                 </p>
             </div>
         </section>
@@ -88,10 +88,10 @@
         <hr class="v-divider">
                 <h1>contact.</h1>
                 <div class="contact-details">
-                    <h3 class="company">AfroPick Limited</h3>
+                    <h3 class="company">AfroPost</h3>
                     <p>We enjoy hearing from readers.<br/>If you have any blogging queries, suggestions, comments or just want to say hello, please email us at the following address.</p>
                     <div class="email">
-                        <i class="far fa-envelope"></i><span>info@theafropick.co.uk</span>
+                        <i class="far fa-envelope"></i><span>afropost@gmail.com</span>
                     </div>
                 </div>
         </section>
