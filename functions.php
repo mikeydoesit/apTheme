@@ -1,6 +1,21 @@
 <?php
 add_filter( 'jetpack_development_mode', '__return_true' );
 
+// Version CSS file in a theme
+wp_enqueue_style(
+	'theme-styles',
+	get_stylesheet_directory_uri() . '/style.css',
+	array(),
+	filemtime( get_stylesheet_directory() . '/style.css' )
+);
+// Version JS file in a theme
+wp_enqueue_script(
+	'theme-scripts',
+	get_stylesheet_directory_uri() . '/js/scripts.js',
+	array(),
+	filemtime( get_stylesheet_directory() . '/js/scripts.js' )
+);
+
 function apBlog_post_thumbnails() {
     add_theme_support( 'post-thumbnails' );
     add_post_type_support('page', 'excerpt');
