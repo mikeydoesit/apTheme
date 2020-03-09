@@ -1,20 +1,14 @@
 <?php
 add_filter( 'jetpack_development_mode', '__return_true' );
 
-// Version CSS file in a theme
-wp_enqueue_style(
-	'theme-styles',
-	get_stylesheet_directory_uri() . '/style.css',
+add_action('wp_head', 'theme_styles');
+function theme_styles(){
+    wp_enqueue_style('bootstrap',THEME_LIB_CSS.'/bootstrap.min.css');
+    wp_enqueue_style('theme-css', get_stylesheet_directory_uri() . '/style.css',
 	array(),
-	filemtime( get_stylesheet_directory() . '/style.css' )
-);
-// Version JS file in a theme
-wp_enqueue_script(
-	'theme-scripts',
-	get_stylesheet_directory_uri() . '/js/scripts.js',
-	array(),
-	filemtime( get_stylesheet_directory() . '/js/scripts.js' )
-);
+	filemtime( get_stylesheet_directory() . '/style.css'));
+}
+
 
 function apBlog_post_thumbnails() {
     add_theme_support( 'post-thumbnails' );
