@@ -48,11 +48,24 @@
     text-decoration: none;
     margin-bottom: 1.8rem;
   }
+  #blogPost ul{
+    display: block;
+    text-align: left;
+    color: #929294;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-decoration: none;
+    margin: 0 auto 1.8rem 2rem;
+  }
 
   @media screen and (max-width: 800px) {
     #blogPost p {
       font-size: 1.1rem;
       margin-bottom: 1rem;
+    }
+    #blogPost ul{
+      font-size: 1.1rem;
+      margin: 0 auto 1rem 2rem;
     }
   }
   @media screen and (max-width: 640px) {
