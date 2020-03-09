@@ -3,7 +3,6 @@ add_filter( 'jetpack_development_mode', '__return_true' );
 
 add_action('wp_head', 'theme_styles');
 function theme_styles(){
-    wp_enqueue_style('bootstrap',THEME_LIB_CSS.'/bootstrap.min.css');
     wp_enqueue_style('theme-css', get_stylesheet_directory_uri() . '/style.css',
 	array(),
 	filemtime( get_stylesheet_directory() . '/style.css'));
