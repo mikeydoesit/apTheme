@@ -6,7 +6,7 @@
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <h1><?php the_title(); ?></h1>
     <div class="post-details">
-    <div class="post-avatar"><?php echo get_avatar($author->ID); ?></div>
+    <div class="post-avatar"><?php echo get_avatar('ID'); ?></div>
     <div class="post-author">By <?php the_author(); ?></div>
     </div>
     <div class="blog-header-image">
