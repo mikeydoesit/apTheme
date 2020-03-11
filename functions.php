@@ -1,7 +1,7 @@
 <?php
 add_filter( 'jetpack_development_mode', '__return_true' );
 
-add_action('wp_head', 'theme_styles');
+add_action('wp_enqueue_scripts', 'theme_styles');
 function theme_styles(){
     wp_enqueue_style('theme-css', get_stylesheet_directory_uri() . '/css/main.css', '', '1.0.0');
 }
