@@ -51,7 +51,7 @@
   #blogPost .bulletContainer {
     margin-left: 2vw;
   }
-  #blogPost ul{
+  #blogPost ul, #blogPost ol{
     display: block;
     text-align: left;
     color: #666666;
