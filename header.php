@@ -7,7 +7,7 @@
     <title><?php wp_title(); ?></title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/main.css">
+    
     <?php wp_head(); ?>
 </head>
 <body <?php body_class() ?>>
