@@ -48,6 +48,9 @@
     text-decoration: none;
     margin-bottom: 1.8rem;
   }
+  #blogPost .bulletContainer {
+    margin-left: 2vw;
+  }
   #blogPost ul{
     display: block;
     text-align: left;
