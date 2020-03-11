@@ -42,7 +42,7 @@
   #blogPost p{
     display: inline-block;
     text-align: justify;
-    color: #929294;
+    color: #666666;
     font-size: 1.2rem;
     line-height: 1.7;
     text-decoration: none;
@@ -54,7 +54,7 @@
   #blogPost ul{
     display: block;
     text-align: left;
-    color: #929294;
+    color: #666666;
     font-size: 1.2rem;
     line-height: 1.7;
     text-decoration: none;
