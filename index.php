@@ -59,9 +59,8 @@ else { ?>
 <div class="sectionHeader">
     <h2>Editors' Picks</h2><i class="fas fa-circle"></i>
 </div>
-    
-<section id="editorPicks">
 <php? rewind_posts(); ?>
+<section id="editorPicks">
 <?php if ( has_post_thumbnail() ) {
 	$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 } 
