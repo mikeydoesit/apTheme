@@ -36,22 +36,24 @@ else { ?>
 <div class="sectionHeader">
     <h2>Trending Topics</h2><i class="fas fa-circle"></i>
 </div>
-    
+<php? rewind_posts(); ?>
     <section id="popularCategories">
+
+    
+
     <?php foreach (get_categories(array(
     'orderby' => 'count',
-    'order'   => 'DESC'
+    'order'   => 'DESC',
+    'number'  => '4'
     )) as $cat) : ?>
-    <?php static $count = 0;
-    if ($count == 4 ) { break; }
-    else { ?>
+
         <a href="<?php echo get_category_link($cat->term_id); ?>" class="categoryCardWrapper">
             <div class="categoryCard <?php echo $cat->slug; ?>"></div>
             <div class="post-categories <?php echo $cat->slug; ?>">
                 <span><?php echo $cat->cat_name; ?></span>
             </div>
         </a>
-    <?php $count++; } ?>
+
 <?php endforeach; ?>
 </section>
 <?php dynamic_sidebar('bottom-banner-widget'); ?>
@@ -61,7 +63,7 @@ else { ?>
 </div>
     
 <section id="editorPicks">
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
 <?php if ( has_post_thumbnail() ) {
 	$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 } 
@@ -81,8 +83,7 @@ else { ?>
         <div class="post-excerpt"><?php the_excerpt(); ?></div>
     </a>
 <?php } ?>
-    <?php endwhile; ?>
-<?php endif; ?>
+
 </section>
 <?php get_footer(); ?>
         
