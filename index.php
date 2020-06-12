@@ -61,11 +61,16 @@ else { ?>
 </div>
 <php? rewind_posts(); ?>
 <section id="editorPicks">
+
+<?php $editorsPick = get_posts( array(
+    'tag' => 'editor',
+    'numberposts' => 3
+) ); ?>
 <?php if ( has_post_thumbnail() ) {
 	$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 } 
 ?>
-<?php if (has_tag('editor')) { ?>
+<?php if ( $editorsPick) { ?>
     <a href="<?php the_permalink(); ?>" class="blogCard">
         <div class="imgWrapper" style="background-image: url(<?php echo $feat_image; ?>);">
             <div class="post-categories">
