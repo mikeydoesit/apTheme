@@ -39,8 +39,6 @@ else { ?>
 <php? rewind_posts(); ?>
     <section id="popularCategories">
 
-    
-
     <?php foreach (get_categories(array(
     'orderby' => 'count',
     'order'   => 'DESC',
@@ -63,7 +61,7 @@ else { ?>
 </div>
     
 <section id="editorPicks">
-
+<php? rewind_posts(); ?>
 <?php if ( has_post_thumbnail() ) {
 	$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 } 
