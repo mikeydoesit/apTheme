@@ -61,16 +61,12 @@ else { ?>
 </div>
 <php? rewind_posts(); ?>
 <section id="editorPicks">
-
-<?php $editorsPick = get_posts( array(
-    'tag' => 'editor',
-    'numberposts' => 3
-) ); ?>
-<?php if ( has_post_thumbnail() ) {
-	$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-} 
+<?php
+    $some_featured_posts = new WP_Query(array('tag' => 'editor', 'posts_per_page' => 3));
+    while ($some_featured_posts->have_posts()): 
+        $some_featured_posts->the_post();
+        $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 ?>
-<?php if ( $editorsPick) { ?>
     <a href="<?php the_permalink(); ?>" class="blogCard">
         <div class="imgWrapper" style="background-image: url(<?php echo $feat_image; ?>);">
             <div class="post-categories">
@@ -84,8 +80,10 @@ else { ?>
         </div>
         <div class="post-excerpt"><?php the_excerpt(); ?></div>
     </a>
-<?php } ?>
-
+    <?php
+    endwhile;
+    wp_reset_postdata();
+?>
 </section>
 <?php get_footer(); ?>
         
