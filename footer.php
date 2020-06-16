@@ -2,7 +2,7 @@
     
         <section class="footer">
             <div class="socMedLinks">
-                <a href="https://www.instagram.com/the_afropick/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/the_afropost/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.youtube.com/channel/UCuCVy9fg3UhtyRSjfMyMLVQ/" target="_blank"><i class="fab fa-youtube"></i></a>
                 <a href="https://twitter.com/afro_post" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href=""><i class="fab fa-linkedin-in"></i></a>
