@@ -91,7 +91,7 @@
                     <h3 class="company">AfroPost</h3>
                     <p>We enjoy hearing from readers.<br/>If you have any blogging queries, suggestions, comments or just want to say hello, please email us at the following address.</p>
                     <div class="email">
-                        <i class="far fa-envelope"></i><span>afropost@gmail.com</span>
+                        <i class="far fa-envelope"></i><span>hello@afropost.co.uk</span>
                     </div>
                 </div>
         </section>
