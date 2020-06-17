@@ -24,12 +24,18 @@
   margin-bottom: 1.5rem;
   text-align: center;
 }
+#blogPost h2 {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
 #blogPost h3 {
   color: #666666;
   font-size: 1.6rem;
   line-height: 1.7;
   text-align: justify;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 #blogPost h4 {
   color: #666666;
