@@ -57,6 +57,9 @@
 #blogPost .post-details .post-author {
   padding: 0 21px;
 }
+#blogpost video {
+  width: -webkit-fill-available;
+}
 #blogPost p{
   display: inline-block;
   text-align: justify;
